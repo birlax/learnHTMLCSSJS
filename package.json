@@ -1,0 +1,16 @@
+{
+  "name": "js_polymer",
+  "version": "1.0.0",
+  "description": "learn html ",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "live-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
