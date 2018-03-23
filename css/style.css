@@ -5,29 +5,88 @@
     vertical-align: middle;
 }
 
+.dialogue {
+    border: 1px solid gray;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    overflow: visible;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+    outline: 0px;
+    padding: 0px;
+    width: 96%;
+}
+
+.window-manager {
+    border-bottom: 1px solid;
+    display: block;
+    height: 18px;
+    padding: 0px;
+    text-align: center;
+}
+
+.window-manager-content {
+    padding-bottom: 0px;
+    margin:0px;
+}
+
+.window-close-mark {
+    border: 0px solid red;
+    height: 17px;
+    width: 17px;
+    float: right;
+    color: red;
+    padding: 0px;
+    border-top-right-radius: 3px;
+}
+
+.window-close-mark:hover{
+    outline: 0px solid;
+    outline-color: red;
+    background-color: lightcoral;
+    padding: 0px;
+}
+
+.window-manager-data-port {
+    border-bottom: 1px solid;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+.window-manager-data-port-content {
+    padding-bottom: 0px;
+    margin:0px;
+}
+
 .grid-view-port {
-    overflow: auto
-    border: 1px solid black;
+    border: 0px solid black;
     white-space: nowrap;
     text-overflow: ellipsis;
     direction: ltr;
 }
 
 .data-view-port {
-    overflow: auto;
-    border: 1px solid black;
-    height: 250px;
-    width: 80%;
-    float: left;
+    overflow-y: scroll;
+    border: 0px solid black;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    direction: ltr;
 }
 
+
 .data-pivot-port {
-    overflow-y: scroll;
-    border: 1px solid black;
-    width: 20%;
-    height: 250px;
+    border: 0px solid black;
+    width: 18%;
     background-color: gold;
-    float: left;
+    float: right;
     color: green;
     font-size: large;
     vertical-align: text-top;
@@ -38,10 +97,8 @@
 
 
 .data-sql-port {
-    overflow-y: scroll;
-    overflow-x: scroll;
     border: 1px solid black;
-    width: 100%;
+    width: 98%;
     height: 150px;
     background-color: black;
     float: left;
@@ -49,6 +106,7 @@
     font-size: 10px;
     vertical-align: text-top;
     padding: 0px;
+    overflow: auto;
 }
 
 .input-data-sql-port {
@@ -61,6 +119,21 @@
     font-size: xx-small;
     vertical-align: text-top;
     padding: 0px;
+
+}
+
+.vertical-additional-options {
+    border: 1px solid black;
+    width: 2%;
+    max-height: 80%;
+    background-color: aquamarine;
+    float: right;
+    color: red;
+    font-size: small;
+    vertical-align: text-top;
+    padding: 0px;
+    writing-mode: vertical-lr;
+    font-weight: bold;
 }
 
 .header-row {
@@ -109,7 +182,6 @@
     margin: 0px;
     height: 15px;
     float: left;
-    width: 100%;
 }
 
 .row:hover {
@@ -128,13 +200,29 @@
     border: 0px;
 }
 
+.row-summary {
+    border-bottom: 1px dotted black;
+    border-left: 0px dotted black;
+    border-right: 0px dotted black;
+    display: flex;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 15px;
+    float: left;
+    width: 80%;
+    background-color: greenyellow;
+}
+
+.row-summary:hover {
+    background-color: lightsalmon;
+}
 
 .cell-header-sno {
     border: 1px solid black;
     padding: 0px;
     margin: 0px;
     font-family: monospace;
-    height: 16px;
     width: 25px;
     text-align: center;
 }
@@ -144,7 +232,7 @@
     padding: 0px;
     margin: 0px;
     font-family: monospace;
-    width: 90px;
+    width: 250px;
     text-align: center;
     /* cursor: col-resize;*/
 }
@@ -176,62 +264,6 @@
 }
 
 
-.dialogue {
-    border: 1px solid gray;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 10px;
-    /*
-    
-    
-    float: left;
-    */
-    overflow: visible;
-    resize: horizontal;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    display: block;
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
-    outline: 0px;
-    padding: 0px;
-    width: 96%;
-
-   
-}
-
-.window-manager-content {
-    padding-bottom: 0px;
-    margin:0px;
-}
-
-.window-manager {
-    border-bottom: 1px solid;
-    display: block;
-    height: 18px;
-    padding: 0px;
-    text-align: center;
-}
-
-.window-close-mark {
-    border: 0px solid red;
-    height: 17px;
-    width: 17px;
-    float: right;
-    color: red;
-    padding: 0px;
-    border-top-right-radius: 3px;
-}
-
-.window-close-mark:hover{
-    outline: 0px solid;
-    outline-color: red;
-    background-color: lightcoral;
-    padding: 0px;
-    
-
-}
 img {
  height: 12px;
  widows: 12px;
