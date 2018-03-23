@@ -72,6 +72,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     direction: ltr;
+    height: 10px;
 }
 
 .data-view-port {
@@ -80,6 +81,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     direction: ltr;
+    white-space: nowrap;
 }
 
 
@@ -94,7 +96,7 @@
     padding: 0px;
     writing-mode: vertical-lr;
     font-weight: bold;
-    height: 100%;
+    white-space: nowrap;
 }
 
 
@@ -109,6 +111,7 @@
     vertical-align: text-top;
     padding: 0px;
     overflow: auto;
+    white-space: nowrap;
 }
 
 .input-data-sql-port {
@@ -121,20 +124,22 @@
     font-size: xx-small;
     vertical-align: text-top;
     padding: 0px;
+    white-space: nowrap;
 
 }
 
 .vertical-additional-options {
     border: 0px solid black;
-    width: 1.5%;
+    border-radius: 4px;
+    width: 1%;
     background-color: aquamarine;
     float: right;
     color: red;
     font-size: xx-small;
-    vertical-align: text-top;
     padding: 0px;
-    writing-mode: vertical-lr;
-    height: 100%;
+    writing-mode: vertical-rl;
+    vertical-align: text-top;
+    white-space: nowrap;
 }
 
 .header-row {
@@ -183,12 +188,14 @@
     margin: 0px;
     height: 15px;
     float: left;
+    width: fit-content;
 }
 
 .row:hover {
     background-color: lightcoral;
     outline: 1px solid blue;
     border: 0px;
+    width: fit-content;
 }
 
 .row:nth-child(2n) {
@@ -202,7 +209,7 @@
 }
 
 .row-summary {
-    border-bottom: 1px dotted black;
+    border-bottom: 0px dotted black;
     border-left: 0px dotted black;
     border-right: 0px dotted black;
     display: flex;
@@ -217,25 +224,28 @@
 
 .row-summary:hover {
     background-color: lightsalmon;
+    width: fit-content;
 }
 
 .cell-header-sno {
-    border: 1px solid black;
+    border: 0px solid black;
+    border-left: 1px dotted black;
+    border-right: 0px dotted black;
     padding: 0px;
     margin: 0px;
     font-family: monospace;
-    width: 25px;
     text-align: center;
+    width: 15x;
 }
 
 .cell-header {
-    border: 1px solid black;
+    border: 0px solid black;
+    border-left: 1px dotted black;
     padding: 0px;
     margin: 0px;
     font-family: monospace;
-    width: 250px;
+    width: 120px;
     text-align: center;
-    /* cursor: col-resize;*/
 }
 
 .cell-header-sno::after{
