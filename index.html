@@ -6,283 +6,85 @@
   <title>My CSS experiment</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <br></br>
-  <br></br>
-
   <div class="dialogue">
-    <div class="window-manager dropzone">
-      <span class="window-manager-content"First Grid Sample</span>
-      <div class="window-close-mark" onclick="logger()">X
+    <div class="window-manager">
+      <span class="window-manager-content">First Grid Sample</span>
+      <div class="window-close-mark" onclick="logger()">X</div>
+    </div>
+    <div class="window-manager">
+      <div class="dropzone">Grouped By:</div>
+      <div class="grid-view-port">
+        <div class="vertical-additional-options">More Options</div>
+        <div class="data-pivot-port">Provide Pivoting columns</div>
+        <div class="data-view-port">
+          <div class="header-row">
+            <span class="cell-header-sno">Sno.</span>
+            <span class="cell-header" draggable="true">Date</span>
+            <span class="cell-header" draggable="true">Price</span>
+            <span class="cell-header" draggable="true">MV</span>
+            <span class="cell-header">User</span>
+            <span class="cell-header" draggable="true">User</span>
+            <span class="cell-header">User</span>
+            <span class="cell-header">User</span>
+            <span class="cell-header">User</span>
+          </div>
+          <div class="row">
+            <span class="cell-header-sno">1</span>
+            <span class="cell">2015-02-23</span>
+            <span class="cell">23.45</span>
+            <span class="cell">$13</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+          </div>
+          <div class="row">
+            <span class="cell-header-sno">2</span>
+            <span class="cell">2015-02-23</span>
+            <span class="cell">23.45</span>
+            <span class="cell">$13</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+          </div>
+          <div class="row">
+            <span class="cell-header-sno">3</span>
+            <span class="cell">2015-02-23</span>
+            <span class="cell">23.45</span>
+            <span class="cell">$13</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+          </div>
+          <div class="row">
+            <span class="cell-header-sno">4</span>
+            <span class="cell">2015-02-23</span>
+            <span class="cell">23.45</span>
+            <span class="cell">$13</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+            <span class="cell">Brijesh Shukla</span>
+          </div>
+        </div>
+        <div class="row-summary">Summary</div>
+        
+        <div class="data-sql-port">
+          <form action="#">
+            <input id="terminal-1" autocomplete="off" class="input-data-sql-port" type="text" value="Grid SQL > ">
+            <input id="terminal-1-submit" type="submit" hidefocus="true" />
+          </form>
+        </div>
       </div>
     </div>
-    <div class="grid-view-port">
-      <div class="header-row">
-        <img src="images/filter.png">
-        <span class="cell-header-sno">Act</span>
-        <span class="cell-header-sno">Sno.</span>
-        <span class="cell-header" draggable="true">Date</span>
-        <span class="cell-header" draggable="true">Price</span>
-        <span class="cell-header" draggable="true">MV</span>
-        <span class="cell-header">User</span>
-        <span class="cell-header" draggable="true">User</span>
-        <span class="cell-header">User</span>
-        <span class="cell-header">User</span>
-        <span class="cell-header">User</span>
-      </div>
-      <div class="dropzone" style="color:red; font-family:Verdana, Geneva, Tahoma, sans-serif ;font-size: 12px ; font-style: oblique">
-        Grouped By:</div>
-      <div class="data-view-port">
-        <div class="row">
-          <span class="cell-header-sno">1</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">2</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-
-        </div>
-        <div class="row">
-
-          <span class="cell-header-sno">3</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-
-        </div>
-        <div class="row">
-
-          <span class="cell-header-sno">3</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-
-          <span class="cell-header-sno">3</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-        <div class="row">
-          <span class="cell-header-sno">4</span>
-          <span class="cell">2015-02-23</span>
-          <span class="cell">23.45</span>
-          <span class="cell">$13</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-          <span class="cell">Brijesh Shukla</span>
-        </div>
-      </div>
-      <div class="data-pivot-port">Provide Pivoting columns.</div>
-      <div class="row" style="color:blueviolet; font-family:Verdana, Geneva, Tahoma, sans-serif ;font-size: 12px ; font-style: oblique">Summary</div>
-      <div class="data-sql-port">
-        <form action="#">
-          <input id="terminal-1" autocomplete="off" class="input-data-sql-port" type="text" value="Grid SQL > ">
-          <input id="terminal-1-submit" type="submit" hidefocus="true" />
-        </form>
-      </div>
-    </div>
-  </div>
   </div>
   <script src="js/draggable.js"></script>
 </body>
