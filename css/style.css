@@ -20,6 +20,7 @@
     outline: 0px;
     padding: 0px;
     width: 96%;
+    font-weight: bold;
 }
 
 .window-manager {
@@ -93,11 +94,12 @@
     padding: 0px;
     writing-mode: vertical-lr;
     font-weight: bold;
+    height: 100%;
 }
 
 
 .data-sql-port {
-    border: 1px solid black;
+    border: 0px solid black;
     width: 98%;
     height: 150px;
     background-color: black;
@@ -110,7 +112,7 @@
 }
 
 .input-data-sql-port {
-    border: 1px solid black;
+    border: 0px solid black;
     width: 100%;
     height: 150px;
     background-color: black;
@@ -123,21 +125,20 @@
 }
 
 .vertical-additional-options {
-    border: 1px solid black;
-    width: 2%;
-    max-height: 80%;
+    border: 0px solid black;
+    width: 1.5%;
     background-color: aquamarine;
     float: right;
     color: red;
-    font-size: small;
+    font-size: xx-small;
     vertical-align: text-top;
     padding: 0px;
     writing-mode: vertical-lr;
-    font-weight: bold;
+    height: 100%;
 }
 
 .header-row {
-    border-bottom: 1px dotted black;
+    border-bottom: px dotted black;
     border-left: 0px dotted black;
     border-right: 0px dotted black;
     display: flex;
@@ -149,7 +150,7 @@
 }
 
 .aggregator-row {
-    border-bottom: 1px dotted green;
+    border-bottom: 0px dotted green;
     border-left: 0px dotted green;
     border-right: 0px dotted green;
     /*display: flex;*/
@@ -161,7 +162,7 @@
 }
 
 .filter-row {
-    border-bottom: 1px dotted black;
+    border-bottom: 0px dotted black;
     border-left: 0px dotted black;
     border-right: 0px dotted black;
     display: flex;
@@ -173,7 +174,7 @@
 
 
 .row {
-    border-bottom: 1px dotted black;
+    border-bottom: 0px dotted black;
     border-left: 0px dotted black;
     border-right: 0px dotted black;
     display: flex;
